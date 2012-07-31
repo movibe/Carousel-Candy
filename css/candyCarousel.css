@@ -1,0 +1,70 @@
+.carousel, .mask{position:relative;}
+.carousel{
+margin-bottom:60px;
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.arrow{
+min-height:20px;	
+}
+.panel, .left, .right, .btn-group{position:absolute;}
+.mask{
+border:1px solid #CCC;
+overflow:hidden;
+}
+.slide{
+height:200px;
+float:left;
+}
+.cover{
+background-color:#000;
+zoom: 1;
+filter: alpha(opacity=50);
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+opacity: 0.3;
+position:absolute;
+}
+#first .slide{
+width:400px;
+}
+#second .slide{
+width:800px;
+}
+.left, .right, .btn-group{bottom:-40px;}
+.left, .right{z-index:2;}
+.arrows:hover{cursor:pointer;}
+.left{left:0px;}
+.right{right:0px;}
+.btn-group{left:40px;}
+
+div#sample{
+height:200px;
+}
+div#sample ul{
+margin:0px;
+padding:0px;
+width:20%;
+list-style-type: none;
+float:left;
+}
+div#sample ul li a{
+margin-bottom:5px;
+line-height:50px;
+display:block;
+text-align:center;
+background-color:#EFEFEF;
+}
+div#sample ul li.active a{
+background-color:#CCC;
+}
+div#sample > div{
+margin-left:5px;
+width:70%;
+height:160px;
+float:left;
+background-color:#CCC;
+}
